@@ -12,6 +12,7 @@ import Observation
 class DequeListViewModel {
     let network: FetchNetwork
     var charactersList = [Characters]()
+    var loadingState = LoadingState.loading
     
     init(network: FetchNetwork) {
         self.network = network
@@ -26,7 +27,10 @@ class DequeListViewModel {
                         charactersList.append(character)
                     }
                 }
+                loadingState = .loaded
             }
+        } else {
+            loadingState = .failed
         }
     }
     

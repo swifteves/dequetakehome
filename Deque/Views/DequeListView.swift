@@ -11,10 +11,19 @@ struct DequeListView: View {
     @State private var viewModel = DequeListViewModel(network: DequeNetworking())
     var body: some View {
         NavigationStack {
-            List {
-                // TODO: ForEach in viewmodel's characters collection
-                ForEach(viewModel.charactersList, id: \.id) { character in
-                    Text("\(character.name!)")
+            VStack {
+                switch viewModel.loadingState {
+                case .loading:
+                    LoadingView()
+                case .loaded:
+                    List {
+                        // TODO: ForEach in viewmodel's characters collection
+                        ForEach(viewModel.charactersList, id: \.id) { character in
+                            Text("\(character.name!)")
+                        }
+                    }
+                case .failed:
+                    LoadingFailedView()
                 }
             }
             .task {

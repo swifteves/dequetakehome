@@ -15,6 +15,9 @@
 		3A88BBB72BD85899004A0C00 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBB62BD85899004A0C00 /* Networking.swift */; };
 		3A88BBBC2BDA91DB004A0C00 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBBB2BDA91DB004A0C00 /* Characters.swift */; };
 		3A88BBBF2BDA92EE004A0C00 /* DequeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBBE2BDA92EE004A0C00 /* DequeListViewModel.swift */; };
+		3AC2B6D42BDAB304006D6CEA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2B6D32BDAB304006D6CEA /* LoadingView.swift */; };
+		3AC2B6D62BDAB3A7006D6CEA /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2B6D52BDAB3A7006D6CEA /* LoadingState.swift */; };
+		3AC2B6D82BDAB49A006D6CEA /* LoadingFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2B6D72BDAB49A006D6CEA /* LoadingFailedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		3A88BBB82BD85C5C004A0C00 /* DequeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeListViewModel.swift; sourceTree = "<group>"; };
 		3A88BBBB2BDA91DB004A0C00 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 		3A88BBBE2BDA92EE004A0C00 /* DequeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeListViewModel.swift; sourceTree = "<group>"; };
+		3AC2B6D32BDAB304006D6CEA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		3AC2B6D52BDAB3A7006D6CEA /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		3AC2B6D72BDAB49A006D6CEA /* LoadingFailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingFailedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			children = (
 				3A88BBA62BD6D854004A0C00 /* DequeApp.swift */,
 				3A88BBB62BD85899004A0C00 /* Networking.swift */,
+				3AC2B6D52BDAB3A7006D6CEA /* LoadingState.swift */,
 				3A88BBBD2BDA92D3004A0C00 /* Models */,
 				3A88BBBA2BDA91BE004A0C00 /* Views */,
 				3A88BBAA2BD6D855004A0C00 /* Assets.xcassets */,
@@ -82,6 +89,8 @@
 		3A88BBBA2BDA91BE004A0C00 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3AC2B6D32BDAB304006D6CEA /* LoadingView.swift */,
+				3AC2B6D72BDAB49A006D6CEA /* LoadingFailedView.swift */,
 				3A88BBA82BD6D854004A0C00 /* DequeListView.swift */,
 				3A88BBB42BD6D8F9004A0C00 /* DequeDetailView.swift */,
 			);
@@ -171,8 +180,11 @@
 				3A88BBBC2BDA91DB004A0C00 /* Characters.swift in Sources */,
 				3A88BBA72BD6D854004A0C00 /* DequeApp.swift in Sources */,
 				3A88BBBF2BDA92EE004A0C00 /* DequeListViewModel.swift in Sources */,
+				3AC2B6D62BDAB3A7006D6CEA /* LoadingState.swift in Sources */,
 				3A88BBB52BD6D8F9004A0C00 /* DequeDetailView.swift in Sources */,
+				3AC2B6D42BDAB304006D6CEA /* LoadingView.swift in Sources */,
 				3A88BBB72BD85899004A0C00 /* Networking.swift in Sources */,
+				3AC2B6D82BDAB49A006D6CEA /* LoadingFailedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
