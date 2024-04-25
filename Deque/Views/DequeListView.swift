@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct DequeListView: View {
-    //@State private var viewModel = DessertListViewModel()
+    @State private var viewModel = DequeListViewModel(network: DequeNetworking())
     var body: some View {
         NavigationStack {
             List {
-                // TODO: ForEach
+                // TODO: ForEach in viewmodel's characters collection
                 Text("Hi")
             }
             .navigationTitle("Deque Take-Home")
