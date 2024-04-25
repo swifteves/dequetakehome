@@ -19,11 +19,11 @@ struct DequeDetailView: View {
                             image.resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(maxWidth: 300, maxHeight: 300)
-                                .mask(RoundedRectangle(cornerRadius: 10, style: .circular)
+                                .mask(RoundedRectangle(cornerRadius: 10)
                                     .frame(maxWidth: 300, maxHeight: 300))
                         },
                         placeholder: {
-                            RoundedRectangle(cornerRadius: 10, style: .circular)
+                            RoundedRectangle(cornerRadius: 10)
                                 .foregroundStyle(.gray)
                                 .frame(maxWidth: 300, maxHeight: 300)
                         }
@@ -37,11 +37,8 @@ struct DequeDetailView: View {
                 Text(realName)
             }
             if let aliases = character.aliases {
-                let aliasCollection = aliases.components(separatedBy: .newlines).filter {
-                    $0.trimmingCharacters(in: .whitespacesAndNewlines) != ""
-                }
                 Text("Known Aliases:")
-                Text(aliasCollection.joined(separator: ", "))
+                Text(character.formattedAliases)
             }
             if let description = character.description {
                 VStack(spacing: 10) {
@@ -57,13 +54,3 @@ struct DequeDetailView: View {
 //#Preview {
 //    DequeDetailView()
 //}
-
-
-// Taken from: https://forums.developer.apple.com/forums/thread/677823
-extension String {
-    func htmlToString() -> String {
-        return  try! NSAttributedString(data: self.data(using: .utf8)!,
-                                        options: [.documentType: NSAttributedString.DocumentType.html],
-                                        documentAttributes: nil).string
-    }
-}

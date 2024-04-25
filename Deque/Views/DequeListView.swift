@@ -1,41 +1,25 @@
 //
-//  ContentView.swift
+//  DequeListViewCell.swift
 //  Deque
 //
-//  Created by Adrian Eves on 4/22/24.
+//  Created by Adrian Eves on 4/25/24.
 //
 
 import SwiftUI
 
 struct DequeListView: View {
-    @State private var viewModel = DequeListViewModel(network: DequeNetworking())
+    var characters: [FranchiseCharacter]
+    
     var body: some View {
-        NavigationStack {
-            VStack {
-                switch viewModel.loadingState {
-                case .loading:
-                    LoadingView()
-                case .loaded:
-                    List {
-                        // TODO: ForEach in viewmodel's characters collection
-                        ForEach(viewModel.charactersList, id: \.id) { character in
-                            NavigationLink(destination: DequeDetailView(character: character)) {
-                                Text("\(character.name!)")
-                            }
-                        }
-                    }
-                case .failed:
-                    LoadingFailedView()
-                }
-            }
-            .task {
-                await viewModel.retrieveCharacters()
-            }
-            .navigationTitle("Deque Take-Home")
+        List(characters, id: \.id) { character in
+            NavigationLink("\(character.name!)", value: character)
+        }
+        .navigationDestination(for: FranchiseCharacter.self) { character in
+            DequeDetailView(character: character)
         }
     }
 }
 
-#Preview {
-    DequeListView()
-}
+//#Preview {
+//    DequeListView()
+//}

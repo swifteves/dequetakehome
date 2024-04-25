@@ -17,7 +17,11 @@ struct ResultsContainer: Codable {
     var results: [FranchiseCharacter]?
 }
 
-struct FranchiseCharacter: Codable {
+struct FranchiseCharacter: Codable, Hashable {
+    static func == (lhs: FranchiseCharacter, rhs: FranchiseCharacter) -> Bool {
+        return lhs.name == rhs.name && lhs.id == rhs.id
+    }
+    
     var aliases: String?
     var apiDetailUrl: String?
     var birthday: String?
@@ -25,7 +29,6 @@ struct FranchiseCharacter: Codable {
     var dateLastUpdated: String?
     var deck: String?
     var description: String?
-    //var firstAppearedInGame: String?
     var gender: Int?
     var guid: String?
     var id: Int?
@@ -34,6 +37,22 @@ struct FranchiseCharacter: Codable {
     var name: String?
     var realName: String?
     var siteDetailUrl: String?
+    
+    var formattedAliases: String {
+        if let aliases = aliases {
+            let aliasCollection = aliases.components(separatedBy: .newlines).filter {
+                $0.trimmingCharacters(in: .whitespacesAndNewlines) != ""
+            }
+            return aliasCollection.formatted(.list(type: .and))
+        }
+        
+        return ""
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
+        hasher.combine(id)
+    }
 }
 
 struct CharacterImage: Codable {

@@ -11,7 +11,7 @@ import SwiftUI
 struct DequeApp: App {
     var body: some Scene {
         WindowGroup {
-            DequeListView()
+            DequeView()
         }
     }
 }
