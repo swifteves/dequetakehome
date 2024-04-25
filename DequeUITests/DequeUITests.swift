@@ -46,4 +46,13 @@ final class DequeUITests: XCTestCase {
         
         XCTAssert(app.activityIndicators.element.exists)
     }
+    
+    func testCharacterList() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["isRunningUITests"]
+        app.launch()
+        
+        sleep(10)
+        XCTAssert(app.cells.count > 0)
+    }
 }

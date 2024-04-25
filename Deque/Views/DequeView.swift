@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DequeView: View {
     @State private var viewModel = DequeListViewModel(network: DequeNetworking())
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -16,9 +17,16 @@ struct DequeView: View {
                 case .loading:
                     LoadingView()
                 case .loaded:
-                    DequeListView(characters: viewModel.charactersList)
+                    CharacterListView(characters: viewModel.charactersList)
                 case .failed:
-                    LoadingFailedView()
+                    VStack {
+                        LoadingFailedView()
+                        Button("Retry") {
+                            Task {
+                                await viewModel.retrieveCharacters()
+                            }
+                        }
+                    }
                 }
             }
             .task {

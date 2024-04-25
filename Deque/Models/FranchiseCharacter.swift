@@ -7,17 +7,7 @@
 
 import Foundation
 
-struct ResultsContainer: Codable {
-    var error: String?
-    var limit: Int?
-    var offset: Int?
-    var numberOfPageResults: Int?
-    var numberOfTotalResults: Int?
-    var statusCode: Int?
-    var results: [FranchiseCharacter]?
-}
-
-struct FranchiseCharacter: Codable, Hashable {
+struct FranchiseCharacter: Decodable, Hashable, Identifiable {
     static func == (lhs: FranchiseCharacter, rhs: FranchiseCharacter) -> Bool {
         return lhs.name == rhs.name && lhs.id == rhs.id
     }
@@ -38,32 +28,26 @@ struct FranchiseCharacter: Codable, Hashable {
     var realName: String?
     var siteDetailUrl: String?
     
-    var formattedAliases: String {
-        if let aliases = aliases {
-            let aliasCollection = aliases.components(separatedBy: .newlines).filter {
-                $0.trimmingCharacters(in: .whitespacesAndNewlines) != ""
-            }
-            return aliasCollection.formatted(.list(type: .and))
+    var aliasList: [String] {
+        guard let aliases = aliases else {
+            return []
         }
         
-        return ""
+        return aliases.components(separatedBy: .newlines).filter {
+            $0.trimmingCharacters(in: .whitespacesAndNewlines) != ""
+        }
+    }
+    
+    var formattedAliases: String {
+        guard !aliasList.isEmpty else {
+            return ""
+        }
+        
+        return aliasList.formatted(.list(type: .and))
     }
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(name)
         hasher.combine(id)
     }
-}
-
-struct CharacterImage: Codable {
-    var iconUrl: String?
-    var mediumUrl: String?
-    var screenUrl: String?
-    var screenLargeUrl: String?
-    var smallUrl: String?
-    var superUrl: String?
-    var thumbUrl: String?
-    var tinyUrl: String?
-    var originalUrl: String?
-    var imageTags: String?
 }

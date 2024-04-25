@@ -11,21 +11,41 @@
 		3A88BBA92BD6D854004A0C00 /* DequeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBA82BD6D854004A0C00 /* DequeView.swift */; };
 		3A88BBAB2BD6D855004A0C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A88BBAA2BD6D855004A0C00 /* Assets.xcassets */; };
 		3A88BBAE2BD6D855004A0C00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A88BBAD2BD6D855004A0C00 /* Preview Assets.xcassets */; };
-		3A88BBB52BD6D8F9004A0C00 /* DequeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBB42BD6D8F9004A0C00 /* DequeDetailView.swift */; };
+		3A88BBB52BD6D8F9004A0C00 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBB42BD6D8F9004A0C00 /* CharacterDetailView.swift */; };
 		3A88BBB72BD85899004A0C00 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBB62BD85899004A0C00 /* Networking.swift */; };
 		3A88BBBC2BDA91DB004A0C00 /* FranchiseCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBBB2BDA91DB004A0C00 /* FranchiseCharacter.swift */; };
 		3A88BBBF2BDA92EE004A0C00 /* DequeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBBE2BDA92EE004A0C00 /* DequeListViewModel.swift */; };
 		3AC2B6D42BDAB304006D6CEA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2B6D32BDAB304006D6CEA /* LoadingView.swift */; };
 		3AC2B6D62BDAB3A7006D6CEA /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2B6D52BDAB3A7006D6CEA /* LoadingState.swift */; };
 		3AC2B6D82BDAB49A006D6CEA /* LoadingFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2B6D72BDAB49A006D6CEA /* LoadingFailedView.swift */; };
-		3AC2B6DA2BDAC985006D6CEA /* DequeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2B6D92BDAC985006D6CEA /* DequeListView.swift */; };
-		3AC2B6DC2BDACAA6006D6CEA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2B6DB2BDACAA6006D6CEA /* StringExtension.swift */; };
+		3AC2B6DA2BDAC985006D6CEA /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2B6D92BDAC985006D6CEA /* CharacterListView.swift */; };
+		3AC2B6DC2BDACAA6006D6CEA /* String+HTMLToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2B6DB2BDACAA6006D6CEA /* String+HTMLToString.swift */; };
 		3AC2B6E42BDAD257006D6CEA /* DequeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2B6E32BDAD257006D6CEA /* DequeUITests.swift */; };
 		3AC2B6E62BDAD257006D6CEA /* DequeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2B6E52BDAD257006D6CEA /* DequeUITestsLaunchTests.swift */; };
+		3AC2B6FE2BDADDFC006D6CEA /* DequeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBBE2BDA92EE004A0C00 /* DequeListViewModel.swift */; };
+		3AEB0BAF2BDADE81005316CE /* DequeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB0BAE2BDADE81005316CE /* DequeTests.swift */; };
+		3AEB0BB72BDADF0F005316CE /* DequeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBBE2BDA92EE004A0C00 /* DequeListViewModel.swift */; };
+		3AEB0BB82BDADFD9005316CE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBB62BD85899004A0C00 /* Networking.swift */; };
+		3AEB0BBA2BDAE389005316CE /* CharacterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB0BB92BDAE389005316CE /* CharacterImage.swift */; };
+		3AEB0BBC2BDAE47B005316CE /* ResultsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB0BBB2BDAE47B005316CE /* ResultsContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		3AC2B6E72BDAD257006D6CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A88BB9B2BD6D854004A0C00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A88BBA22BD6D854004A0C00;
+			remoteInfo = Deque;
+		};
+		3AC2B6F42BDADCBC006D6CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A88BB9B2BD6D854004A0C00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A88BBA22BD6D854004A0C00;
+			remoteInfo = Deque;
+		};
+		3AEB0BB02BDADE81005316CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A88BB9B2BD6D854004A0C00 /* Project object */;
 			proxyType = 1;
@@ -40,19 +60,23 @@
 		3A88BBA82BD6D854004A0C00 /* DequeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeView.swift; sourceTree = "<group>"; };
 		3A88BBAA2BD6D855004A0C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A88BBAD2BD6D855004A0C00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3A88BBB42BD6D8F9004A0C00 /* DequeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeDetailView.swift; sourceTree = "<group>"; };
+		3A88BBB42BD6D8F9004A0C00 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		3A88BBB62BD85899004A0C00 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		3A88BBB82BD85C5C004A0C00 /* DequeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeListViewModel.swift; sourceTree = "<group>"; };
 		3A88BBBB2BDA91DB004A0C00 /* FranchiseCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FranchiseCharacter.swift; sourceTree = "<group>"; };
 		3A88BBBE2BDA92EE004A0C00 /* DequeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeListViewModel.swift; sourceTree = "<group>"; };
 		3AC2B6D32BDAB304006D6CEA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3AC2B6D52BDAB3A7006D6CEA /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		3AC2B6D72BDAB49A006D6CEA /* LoadingFailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingFailedView.swift; sourceTree = "<group>"; };
-		3AC2B6D92BDAC985006D6CEA /* DequeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeListView.swift; sourceTree = "<group>"; };
-		3AC2B6DB2BDACAA6006D6CEA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		3AC2B6D92BDAC985006D6CEA /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		3AC2B6DB2BDACAA6006D6CEA /* String+HTMLToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTMLToString.swift"; sourceTree = "<group>"; };
 		3AC2B6E12BDAD257006D6CEA /* DequeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DequeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC2B6E32BDAD257006D6CEA /* DequeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeUITests.swift; sourceTree = "<group>"; };
 		3AC2B6E52BDAD257006D6CEA /* DequeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3AC2B6F02BDADCBC006D6CEA /* DequeUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DequeUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AEB0BAC2BDADE81005316CE /* DequeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DequeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AEB0BAE2BDADE81005316CE /* DequeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeTests.swift; sourceTree = "<group>"; };
+		3AEB0BB92BDAE389005316CE /* CharacterImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImage.swift; sourceTree = "<group>"; };
+		3AEB0BBB2BDAE47B005316CE /* ResultsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +94,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3AC2B6ED2BDADCBC006D6CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AEB0BA92BDADE81005316CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +116,7 @@
 			children = (
 				3A88BBA52BD6D854004A0C00 /* Deque */,
 				3AC2B6E22BDAD257006D6CEA /* DequeUITests */,
+				3AEB0BAD2BDADE81005316CE /* DequeTests */,
 				3A88BBA42BD6D854004A0C00 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +126,8 @@
 			children = (
 				3A88BBA32BD6D854004A0C00 /* Deque.app */,
 				3AC2B6E12BDAD257006D6CEA /* DequeUITests.xctest */,
+				3AC2B6F02BDADCBC006D6CEA /* DequeUnitTests.xctest */,
+				3AEB0BAC2BDADE81005316CE /* DequeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,13 +137,12 @@
 			children = (
 				3A88BBA62BD6D854004A0C00 /* DequeApp.swift */,
 				3A88BBB62BD85899004A0C00 /* Networking.swift */,
-				3AC2B6DB2BDACAA6006D6CEA /* StringExtension.swift */,
+				3AC2B6DB2BDACAA6006D6CEA /* String+HTMLToString.swift */,
 				3AC2B6D52BDAB3A7006D6CEA /* LoadingState.swift */,
 				3A88BBBD2BDA92D3004A0C00 /* Models */,
 				3A88BBBA2BDA91BE004A0C00 /* Views */,
 				3A88BBAA2BD6D855004A0C00 /* Assets.xcassets */,
 				3A88BBAC2BD6D855004A0C00 /* Preview Content */,
-				3A88BBB82BD85C5C004A0C00 /* DequeListViewModel.swift */,
 			);
 			path = Deque;
 			sourceTree = "<group>";
@@ -121,8 +161,8 @@
 				3AC2B6D32BDAB304006D6CEA /* LoadingView.swift */,
 				3AC2B6D72BDAB49A006D6CEA /* LoadingFailedView.swift */,
 				3A88BBA82BD6D854004A0C00 /* DequeView.swift */,
-				3A88BBB42BD6D8F9004A0C00 /* DequeDetailView.swift */,
-				3AC2B6D92BDAC985006D6CEA /* DequeListView.swift */,
+				3A88BBB42BD6D8F9004A0C00 /* CharacterDetailView.swift */,
+				3AC2B6D92BDAC985006D6CEA /* CharacterListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,6 +172,8 @@
 			children = (
 				3A88BBBB2BDA91DB004A0C00 /* FranchiseCharacter.swift */,
 				3A88BBBE2BDA92EE004A0C00 /* DequeListViewModel.swift */,
+				3AEB0BB92BDAE389005316CE /* CharacterImage.swift */,
+				3AEB0BBB2BDAE47B005316CE /* ResultsContainer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -143,6 +185,14 @@
 				3AC2B6E52BDAD257006D6CEA /* DequeUITestsLaunchTests.swift */,
 			);
 			path = DequeUITests;
+			sourceTree = "<group>";
+		};
+		3AEB0BAD2BDADE81005316CE /* DequeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AEB0BAE2BDADE81005316CE /* DequeTests.swift */,
+			);
+			path = DequeTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +233,42 @@
 			productReference = 3AC2B6E12BDAD257006D6CEA /* DequeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		3AC2B6EF2BDADCBC006D6CEA /* DequeUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AC2B6F62BDADCBC006D6CEA /* Build configuration list for PBXNativeTarget "DequeUnitTests" */;
+			buildPhases = (
+				3AC2B6EC2BDADCBC006D6CEA /* Sources */,
+				3AC2B6ED2BDADCBC006D6CEA /* Frameworks */,
+				3AC2B6EE2BDADCBC006D6CEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AC2B6F52BDADCBC006D6CEA /* PBXTargetDependency */,
+			);
+			name = DequeUnitTests;
+			productName = DequeUnitTests;
+			productReference = 3AC2B6F02BDADCBC006D6CEA /* DequeUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3AEB0BAB2BDADE81005316CE /* DequeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AEB0BB42BDADE81005316CE /* Build configuration list for PBXNativeTarget "DequeTests" */;
+			buildPhases = (
+				3AEB0BA82BDADE81005316CE /* Sources */,
+				3AEB0BA92BDADE81005316CE /* Frameworks */,
+				3AEB0BAA2BDADE81005316CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AEB0BB12BDADE81005316CE /* PBXTargetDependency */,
+			);
+			name = DequeTests;
+			productName = DequeTests;
+			productReference = 3AEB0BAC2BDADE81005316CE /* DequeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,6 +283,14 @@
 						CreatedOnToolsVersion = 15.3;
 					};
 					3AC2B6E02BDAD257006D6CEA = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 3A88BBA22BD6D854004A0C00;
+					};
+					3AC2B6EF2BDADCBC006D6CEA = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 3A88BBA22BD6D854004A0C00;
+					};
+					3AEB0BAB2BDADE81005316CE = {
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 3A88BBA22BD6D854004A0C00;
 					};
@@ -217,6 +311,8 @@
 			targets = (
 				3A88BBA22BD6D854004A0C00 /* Deque */,
 				3AC2B6E02BDAD257006D6CEA /* DequeUITests */,
+				3AC2B6EF2BDADCBC006D6CEA /* DequeUnitTests */,
+				3AEB0BAB2BDADE81005316CE /* DequeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,6 +334,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3AC2B6EE2BDADCBC006D6CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AEB0BAA2BDADE81005316CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -248,14 +358,16 @@
 				3A88BBA92BD6D854004A0C00 /* DequeView.swift in Sources */,
 				3A88BBBC2BDA91DB004A0C00 /* FranchiseCharacter.swift in Sources */,
 				3A88BBA72BD6D854004A0C00 /* DequeApp.swift in Sources */,
+				3AEB0BBC2BDAE47B005316CE /* ResultsContainer.swift in Sources */,
+				3AEB0BBA2BDAE389005316CE /* CharacterImage.swift in Sources */,
 				3A88BBBF2BDA92EE004A0C00 /* DequeListViewModel.swift in Sources */,
 				3AC2B6D62BDAB3A7006D6CEA /* LoadingState.swift in Sources */,
-				3A88BBB52BD6D8F9004A0C00 /* DequeDetailView.swift in Sources */,
+				3A88BBB52BD6D8F9004A0C00 /* CharacterDetailView.swift in Sources */,
 				3AC2B6D42BDAB304006D6CEA /* LoadingView.swift in Sources */,
 				3A88BBB72BD85899004A0C00 /* Networking.swift in Sources */,
 				3AC2B6D82BDAB49A006D6CEA /* LoadingFailedView.swift in Sources */,
-				3AC2B6DC2BDACAA6006D6CEA /* StringExtension.swift in Sources */,
-				3AC2B6DA2BDAC985006D6CEA /* DequeListView.swift in Sources */,
+				3AC2B6DC2BDACAA6006D6CEA /* String+HTMLToString.swift in Sources */,
+				3AC2B6DA2BDAC985006D6CEA /* CharacterListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +380,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3AC2B6EC2BDADCBC006D6CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC2B6FE2BDADDFC006D6CEA /* DequeListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AEB0BA82BDADE81005316CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AEB0BB82BDADFD9005316CE /* Networking.swift in Sources */,
+				3AEB0BAF2BDADE81005316CE /* DequeTests.swift in Sources */,
+				3AEB0BB72BDADF0F005316CE /* DequeListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -275,6 +405,16 @@
 			isa = PBXTargetDependency;
 			target = 3A88BBA22BD6D854004A0C00 /* Deque */;
 			targetProxy = 3AC2B6E72BDAD257006D6CEA /* PBXContainerItemProxy */;
+		};
+		3AC2B6F52BDADCBC006D6CEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A88BBA22BD6D854004A0C00 /* Deque */;
+			targetProxy = 3AC2B6F42BDADCBC006D6CEA /* PBXContainerItemProxy */;
+		};
+		3AEB0BB12BDADE81005316CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A88BBA22BD6D854004A0C00 /* Deque */;
+			targetProxy = 3AEB0BB02BDADE81005316CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -486,6 +626,74 @@
 			};
 			name = Release;
 		};
+		3AC2B6F72BDADCBC006D6CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adrianeves.DequeUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deque.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deque";
+			};
+			name = Debug;
+		};
+		3AC2B6F82BDADCBC006D6CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adrianeves.DequeUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deque.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deque";
+			};
+			name = Release;
+		};
+		3AEB0BB22BDADE81005316CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adrianeves.DequeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deque.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deque";
+			};
+			name = Debug;
+		};
+		3AEB0BB32BDADE81005316CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adrianeves.DequeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deque.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Deque";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -512,6 +720,24 @@
 			buildConfigurations = (
 				3AC2B6EA2BDAD257006D6CEA /* Debug */,
 				3AC2B6EB2BDAD257006D6CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AC2B6F62BDADCBC006D6CEA /* Build configuration list for PBXNativeTarget "DequeUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC2B6F72BDADCBC006D6CEA /* Debug */,
+				3AC2B6F82BDADCBC006D6CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AEB0BB42BDADE81005316CE /* Build configuration list for PBXNativeTarget "DequeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AEB0BB22BDADE81005316CE /* Debug */,
+				3AEB0BB32BDADE81005316CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

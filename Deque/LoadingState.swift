@@ -7,8 +7,9 @@
 
 import Foundation
 
+// Manages the state of the networking process.
 enum LoadingState {
-    case loading
-    case loaded
-    case failed
+    case loading // The data is still loading.
+    case loaded // The data has loaded.
+    case failed // The data has failed to load.
 }
