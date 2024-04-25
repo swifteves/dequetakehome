@@ -10,12 +10,11 @@ import Foundation
 extension String {
     func displayHtml() -> String {
         do {
-            let result = try NSAttributedString(
+            return try NSAttributedString(
                 data: self.data(using: .utf8)!,
                 options: [.documentType: NSAttributedString.DocumentType.html],
                 documentAttributes: nil).string
-            return result
-        } catch let error {
+        } catch {
             return error.localizedDescription
         }
     }

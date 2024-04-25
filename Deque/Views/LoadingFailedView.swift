@@ -10,11 +10,11 @@ import SwiftUI
 struct LoadingFailedView: View {
     var body: some View {
         VStack {
-            ContentUnavailableView {
-                Label("No Results", systemImage: "tray.fill")
-            } description: {
-                Text("Unable to retrieve data.")
-            }
+            ContentUnavailableView(
+                "No Results",
+                systemImage: "tray.fill",
+                description: Text("Unable to retrieve data.")
+            )
         }
     }
 }

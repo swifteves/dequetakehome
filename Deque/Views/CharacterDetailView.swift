@@ -13,24 +13,20 @@ struct CharacterDetailView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {
-                VStack(spacing: 10) {
-                    if let imageUrl = character.image?.originalUrl {
-                        AsyncImage(url: URL(string: imageUrl)) { image in
-                            image
-                                .resizable()
-                                .scaledToFit()
-                        } placeholder: {
-                            Image(systemName: "tray.fill")
-                        }
-                        .frame(width: 250, height: 250)
+                if let imageUrl = character.image?.originalUrl {
+                    AsyncImage(url: URL(string: imageUrl)) { image in
+                        image
+                            .resizable()
+                            .scaledToFit()
+                    } placeholder: {
+                        Image(systemName: "tray.fill")
                     }
+                    .frame(width: 250, height: 250)
                 }
                 
                 // Display name
-                if let name = character.name {
-                    Text(character.name!)
-                        .font(.largeTitle)
-                }
+                Text(character.name)
+                    .font(.largeTitle)
                 
                 // Display real name
                 if let realName = character.realName {
@@ -44,17 +40,11 @@ struct CharacterDetailView: View {
                 
                 // Display description
                 if let description = character.description {
-                    VStack(spacing: 10) {
-                        Text("***Description:***")
-                        Text(description.displayHtml())
-                    }
+                    Text(description.displayHtml())
                 }
             }
         }
-        .contentMargins(10, for: .scrollContent)
+        .contentMargins(.horizontal, 10, for: .scrollContent)
+        .scrollBounceBehavior(.basedOnSize)
     }
 }
-
-//#Preview {
-//    DequeDetailView()
-//}

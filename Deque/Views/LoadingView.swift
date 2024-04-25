@@ -11,7 +11,7 @@ struct LoadingView: View {
     var body: some View {
         VStack {
             ProgressView()
-                .progressViewStyle(CircularProgressViewStyle())
+                .progressViewStyle(.circular)
                 .accessibilityHidden(true)
             Text("Loading...")
         }

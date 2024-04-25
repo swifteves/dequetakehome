@@ -52,7 +52,6 @@ final class DequeUITests: XCTestCase {
         app.launchArguments = ["isRunningUITests"]
         app.launch()
         
-        sleep(10)
         XCTAssert(app.cells.count > 0)
     }
 }

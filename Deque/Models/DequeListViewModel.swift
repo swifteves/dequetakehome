@@ -6,33 +6,34 @@
 //
 
 import Foundation
-import Observation
 
 @Observable
 class DequeListViewModel {
-    let network: FetchNetwork
     var charactersList = [FranchiseCharacter]()
     var loadingState = LoadingState.loading
+    var searchText = ""
     
-    init(network: FetchNetwork) {
-        self.network = network
-    }
-    
-    func retrieveCharacters() async {
-        if let results: ResultsContainer? = await network.getData(url: "https://www.giantbomb.com/api/characters/?api_key=ea98adc584efb356fcd14b949f8a9f2aa2b270b8&format=json") {
-            if let characters = results?.results {
-                //charactersList = characters
-                for character in characters {
-                    if character.name != nil {
-                        charactersList.append(character)
-                    }
-                }
-                loadingState = .loaded
-            }
-        } else {
-            loadingState = .failed
+    var filteredCharacters: [FranchiseCharacter] {
+        charactersList.filter {
+            $0.name.localizedStandardContains(searchText)
         }
     }
     
-    
+    func retrieveCharacters() async {
+        #if DEBUG
+        if CommandLine.arguments.contains("weofewhcouwfh") {
+            // Make objects
+            
+            return
+        }
+        #endif
+        do {
+            #warning("This name sucks")
+            let results = try await Network.fetch(.characters)
+            charactersList = results.results
+            loadingState = .loaded
+        } catch {
+            loadingState = .failed
+        }
+    }
 }

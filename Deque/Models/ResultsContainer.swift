@@ -14,5 +14,5 @@ struct ResultsContainer: Decodable {
     var numberOfPageResults: Int?
     var numberOfTotalResults: Int?
     var statusCode: Int?
-    var results: [FranchiseCharacter]?
+    var results: [FranchiseCharacter]
 }

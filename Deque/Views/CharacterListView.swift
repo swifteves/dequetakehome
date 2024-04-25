@@ -8,20 +8,13 @@
 import SwiftUI
 
 struct CharacterListView: View {
-    @State private var searchText = ""
-    var characters: [FranchiseCharacter]
-    
+    @Bindable
+    var viewModel: DequeListViewModel
     var body: some View {
-        List(characters) { character in
-            if let name = character.name {
-                NavigationLink("\(name)", value: character)
-            }
+        List(viewModel.filteredCharacters) { character in
+            NavigationLink(character.name, value: character)
         }
-        .searchable(text: $searchText)
+        .searchable(text: $viewModel.searchText)
         .navigationDestination(for: FranchiseCharacter.self, destination: CharacterDetailView.init)
     }
 }
-
-//#Preview {
-//    DequeListView()
-//}

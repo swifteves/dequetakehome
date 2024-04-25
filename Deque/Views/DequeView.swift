@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DequeView.swift
 //  Deque
 //
 //  Created by Adrian Eves on 4/22/24.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DequeView: View {
-    @State private var viewModel = DequeListViewModel(network: DequeNetworking())
+    @State private var viewModel = DequeListViewModel()
     
     var body: some View {
         NavigationStack {
@@ -17,7 +17,7 @@ struct DequeView: View {
                 case .loading:
                     LoadingView()
                 case .loaded:
-                    CharacterListView(characters: viewModel.charactersList)
+                    CharacterListView(viewModel: viewModel)
                 case .failed:
                     VStack {
                         LoadingFailedView()
@@ -26,6 +26,7 @@ struct DequeView: View {
                                 await viewModel.retrieveCharacters()
                             }
                         }
+                        .buttonStyle(.borderedProminent)
                     }
                 }
             }
