@@ -19,7 +19,7 @@ class DequeListViewModel {
     
     func retrieveCharacters() {
         Task {
-            if let results: Characters? = await network.getData(url: "people") {
+            if let results: Characters? = await network.getData(url: "https://www.giantbomb.com/api/characters/?api_key=ea98adc584efb356fcd14b949f8a9f2aa2b270b8") {
                 // TODO: do something with your characters
             }
         }
