@@ -13,7 +13,6 @@
 		3A88BBAE2BD6D855004A0C00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A88BBAD2BD6D855004A0C00 /* Preview Assets.xcassets */; };
 		3A88BBB52BD6D8F9004A0C00 /* DequeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBB42BD6D8F9004A0C00 /* DequeDetailView.swift */; };
 		3A88BBB72BD85899004A0C00 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBB62BD85899004A0C00 /* Networking.swift */; };
-		3A88BBB92BD85C5C004A0C00 /* DequeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBB82BD85C5C004A0C00 /* DequeListViewModel.swift */; };
 		3A88BBBC2BDA91DB004A0C00 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBBB2BDA91DB004A0C00 /* Characters.swift */; };
 		3A88BBBF2BDA92EE004A0C00 /* DequeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88BBBE2BDA92EE004A0C00 /* DequeListViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -171,7 +170,6 @@
 				3A88BBA92BD6D854004A0C00 /* DequeListView.swift in Sources */,
 				3A88BBBC2BDA91DB004A0C00 /* Characters.swift in Sources */,
 				3A88BBA72BD6D854004A0C00 /* DequeApp.swift in Sources */,
-				3A88BBB92BD85C5C004A0C00 /* DequeListViewModel.swift in Sources */,
 				3A88BBBF2BDA92EE004A0C00 /* DequeListViewModel.swift in Sources */,
 				3A88BBB52BD6D8F9004A0C00 /* DequeDetailView.swift in Sources */,
 				3A88BBB72BD85899004A0C00 /* Networking.swift in Sources */,

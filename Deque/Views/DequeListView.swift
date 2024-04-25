@@ -15,6 +15,9 @@ struct DequeListView: View {
                 // TODO: ForEach in viewmodel's characters collection
                 Text("Hi")
             }
+            .task {
+                await viewModel.retrieveCharacters()
+            }
             .navigationTitle("Deque Take-Home")
         }
     }
