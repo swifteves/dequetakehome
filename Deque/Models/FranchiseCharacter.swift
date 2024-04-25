@@ -14,10 +14,10 @@ struct ResultsContainer: Codable {
     var numberOfPageResults: Int?
     var numberOfTotalResults: Int?
     var statusCode: Int?
-    var results: [Characters]?
+    var results: [FranchiseCharacter]?
 }
 
-struct Characters: Codable {
+struct FranchiseCharacter: Codable {
     var aliases: String?
     var apiDetailUrl: String?
     var birthday: String?
@@ -29,9 +29,22 @@ struct Characters: Codable {
     var gender: Int?
     var guid: String?
     var id: Int?
-    //var image: String?
+    var image: CharacterImage?
     var lastName: String?
     var name: String?
     var realName: String?
-    var siteDetailUr: String?
+    var siteDetailUrl: String?
+}
+
+struct CharacterImage: Codable {
+    var iconUrl: String?
+    var mediumUrl: String?
+    var screenUrl: String?
+    var screenLargeUrl: String?
+    var smallUrl: String?
+    var superUrl: String?
+    var thumbUrl: String?
+    var tinyUrl: String?
+    var originalUrl: String?
+    var imageTags: String?
 }

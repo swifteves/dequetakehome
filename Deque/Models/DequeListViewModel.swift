@@ -11,7 +11,7 @@ import Observation
 @Observable
 class DequeListViewModel {
     let network: FetchNetwork
-    var charactersList = [Characters]()
+    var charactersList = [FranchiseCharacter]()
     var loadingState = LoadingState.loading
     
     init(network: FetchNetwork) {

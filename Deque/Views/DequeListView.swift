@@ -19,7 +19,9 @@ struct DequeListView: View {
                     List {
                         // TODO: ForEach in viewmodel's characters collection
                         ForEach(viewModel.charactersList, id: \.id) { character in
-                            Text("\(character.name!)")
+                            NavigationLink(destination: DequeDetailView(character: character)) {
+                                Text("\(character.name!)")
+                            }
                         }
                     }
                 case .failed:
