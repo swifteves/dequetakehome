@@ -7,6 +7,16 @@
 
 import Foundation
 
+struct ResultsContainer: Codable {
+    var error: String?
+    var limit: Int
+    var offset: Int
+    var numberOfPageResults: Int
+    var numberOfTotalResults: Int
+    var statusCode: Int
+    var results: [Characters]
+}
+
 struct Characters: Codable {
     var aliases: String
     var apiDetailUrl: String
