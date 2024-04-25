@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BA830107-7984-49F4-9FEE-A3F87BB9D3E5"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Deque/Models/DequeListViewModel.swift"
@@ -34,110 +34,38 @@
             endingLineNumber = "21"
             landmarkName = "retrieveCharacters()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BA830107-7984-49F4-9FEE-A3F87BB9D3E5 - bb46076222bb5681"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for Deque.DequeListViewModel.retrieveCharacters() async -&gt; ()"
-                  moduleName = "Deque"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adrian/Documents/GitHub/dequetakehome/Deque/Models/DequeListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21">
-               </Location>
-               <Location
-                  uuid = "BA830107-7984-49F4-9FEE-A3F87BB9D3E5 - b142533414257a3c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for Deque.DequeListViewModel.retrieveCharacters() async -&gt; ()"
-                  moduleName = "Deque"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adrian/Documents/GitHub/dequetakehome/Deque/Models/DequeListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21">
-               </Location>
-               <Location
-                  uuid = "BA830107-7984-49F4-9FEE-A3F87BB9D3E5 - 3ca0f3982c068d7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Deque.DequeListViewModel.retrieveCharacters() async -&gt; ()"
-                  moduleName = "Deque"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adrian/Documents/GitHub/dequetakehome/Deque/Models/DequeListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B815133A-A5F7-4CAE-9A3E-E49AD54C7860"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Deque/Views/DequeListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "body"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "B815133A-A5F7-4CAE-9A3E-E49AD54C7860 - 4506c1f0c1438549"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0 in Deque.DequeListView.body.getter : some"
-                  moduleName = "Deque"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adrian/Documents/GitHub/dequetakehome/Deque/Views/DequeListView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19">
-               </Location>
-               <Location
-                  uuid = "B815133A-A5F7-4CAE-9A3E-E49AD54C7860 - bfe8659a239f0f37"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0 in Deque.DequeListView.body.getter : some"
-                  moduleName = "Deque"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adrian/Documents/GitHub/dequetakehome/Deque/Views/DequeListView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19">
-               </Location>
-               <Location
-                  uuid = "B815133A-A5F7-4CAE-9A3E-E49AD54C7860 - 38ebef6a575c2c7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0 in Deque.DequeListView.body.getter : some"
-                  moduleName = "Deque"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adrian/Documents/GitHub/dequetakehome/Deque/Views/DequeListView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "138886F0-4E0C-4BDE-917D-7BE89846CA40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Deque/Models/DequeListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "retrieveCharacters()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

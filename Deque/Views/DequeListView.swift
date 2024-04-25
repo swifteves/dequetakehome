@@ -13,7 +13,9 @@ struct DequeListView: View {
         NavigationStack {
             List {
                 // TODO: ForEach in viewmodel's characters collection
-                Text("Hi")
+                ForEach(viewModel.charactersList, id: \.id) { character in
+                    Text("\(character.name!)")
+                }
             }
             .task {
                 await viewModel.retrieveCharacters()

@@ -19,7 +19,14 @@ class DequeListViewModel {
     
     func retrieveCharacters() async {
         if let results: ResultsContainer? = await network.getData(url: "https://www.giantbomb.com/api/characters/?api_key=ea98adc584efb356fcd14b949f8a9f2aa2b270b8&format=json") {
-            // TODO: do something with your characters
+            if let characters = results?.results {
+                //charactersList = characters
+                for character in characters {
+                    if character.name != nil {
+                        charactersList.append(character)
+                    }
+                }
+            }
         }
     }
     
